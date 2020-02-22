@@ -29,6 +29,8 @@ Manager::Manager()
     connect(mSecondClient, SIGNAL(send(QString)), mFirstClient, SLOT(displayForOther(QString)));
     connect(mFirstClient, SIGNAL(send(QString)), mFirstClient, SLOT(displayForMe(QString)));
     connect(mSecondClient, SIGNAL(send(QString)), mSecondClient, SLOT(displayForMe(QString)));
+    connect(mFirstClient, SIGNAL(onlineDisplay(QString)), mSecondClient, SLOT(displayOnLabel(QString)));
+    connect(mSecondClient, SIGNAL(onlineDisplay(QString)), mFirstClient, SLOT(displayOnLabel(QString)));
 }
 
 Manager::~Manager()

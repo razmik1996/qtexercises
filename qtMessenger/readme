@@ -2,9 +2,12 @@ It's a program for showing my Own Messenger.
 
 /////////////////////////////////////////////////////////////////////////////////////////
 
-For documentation open html file /doc/html/index.html
+For documentation 
+sudo apt-get install doxygen
+cd doc
+doxygen doxyconf
+open html file /doc/html/index.html
 Example firefox doc/html/index.html
-You can run program after compiling just type make
-for other commands
-type make help
+
+You can run program after compiling just type qmake and make
 After compiling you can run program from bin/ (bin/messenger)

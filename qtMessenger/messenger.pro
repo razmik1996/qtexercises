@@ -3,7 +3,7 @@
 ######################################################################
 
 TEMPLATE = app
-TARGET = qtMessenger
+TARGET = messenger
 INCLUDEPATH += .
 
 # Input
